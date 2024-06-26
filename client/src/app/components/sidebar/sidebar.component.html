@@ -1,0 +1,17 @@
+
+<div class="sidebar" [ngClass]="{'collapsed': isCollapsed}">
+  <button class="toggle-button" (click)="onToggleSidebar()">☰</button>
+  <div class="sidebar-header">
+    <h5>Sidebar</h5>
+  </div>
+  <ul>
+    
+    <li><a routerLink="/update-provider"><i class="fas fa-edit"></i> Update Provider</a></li>
+    <li><a routerLink="/buy-energy"><i class="fas fa-shopping-cart"></i> Buy Energy</a></li>
+    <li><a routerLink="/provider-info"><i class="fas fa-info-circle"></i> Info</a></li>
+  </ul>
+</div>
+
+<div class="content" [class.content-shift]="isSidebarActive">
+  <!-- Your content goes here -->
+</div>

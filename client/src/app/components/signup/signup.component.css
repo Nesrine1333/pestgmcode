@@ -1,0 +1,111 @@
+
+.body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding: 30px 30px 30px 30px;
+    background: rgba(209, 229, 242, 0.5);
+
+}
+.wrapper {
+    font-family: "Poppins", sans-serif;
+    overflow:hidden;
+    
+    background: rgba(209, 229, 242, 0.5);
+    border: 2px solid rgba(125, 104, 150, 0.5);
+    box-shadow: 0 0 10px rgba(25, 17, 27, 0.2);
+    color: rgb(68, 75, 85);
+    border-radius: 10px;
+  width:500px;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+
+    /* Center the container horizontally */
+   
+  
+} 
+.sigup{
+    color:#4AB876;
+}
+.signup-form {
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    background: rgba(209, 229, 242, 0.5);
+    border: 2px solid rgba(125, 104, 150, 0.5);
+    box-shadow: 0 0 10px rgba(25, 17, 27, 0.2);
+    color:#9E9E9E;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px; /* Adjust margin top as needed */
+  }
+  
+  .signup-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form form {
+    width: 100%;
+  }
+  
+  .signup-form .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .signup-form .input-box div {
+    margin-bottom: 10px;
+  }
+  
+  .signup-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-form button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-form p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+  }

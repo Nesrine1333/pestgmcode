@@ -1,0 +1,32 @@
+<div class="body">
+  <div class="wrapper">
+  <div class="logo-container">
+    <div class="logo-text" >
+        <h1 class="logo">Login</h1>
+        
+    </div>
+</div>
+<form [formGroup]="formUser"  (ngSubmit)="login()">
+  <div class="input-box">
+      <div>
+          <label>Enter your email</label>   
+      <input type="text" placeholder="email" formControlName="email"  required>
+  
+  </div>
+
+      <div>
+          <label>Enter your password</label>
+          <input type="{{ hide ? 'password' : 'text' }}" formControlName="password">
+            <i class="bx" [class.bx-show]="hide" [class.bx-hide]="!hide" (click)="togglePasswordVisibility()"></i>
+  
+        </div>
+  </div>
+
+  <button type="submit" class="btn">Login</button>
+  
+</form>
+<div class="signup-link">
+  <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+</div>
+  </div>
+</div>

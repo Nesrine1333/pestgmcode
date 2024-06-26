@@ -1,0 +1,31 @@
+<div class="content">
+  <app-sidebar [isCollapsed]="isCollapsed" (toggleSidebar)="toggleSidebar()"></app-sidebar>
+  <div class="contentContainer" >
+    <div class="header">
+      <h2>Dashboard</h2>
+      <div>Hello {{ loggedInUser?.name }}</div>
+   
+    </div>
+
+    <div class="buy-energy">
+      <h1>Buy Energy</h1>
+      <input type="number" [(ngModel)]="energyAmount" placeholder="Energy Amount">
+      <button (click)="buyEnergy()">Buy Energy</button>
+    </div>
+
+    <div class="consumer-info">
+      <h2>Get Consumer Info</h2>
+      <div>
+        <button (click)="getConsumerInfo()">Get Info</button>
+      </div>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+      <div *ngIf="consumerInfo">
+        <h3>Consumer Info:</h3>
+        <p><strong>Energy Balance:</strong> {{ consumerInfo.energyBalance }}</p>
+        <p><strong>Ether Balance:</strong> {{ consumerInfo.etherBalance }}</p>
+      </div>
+    </div>
+  </div>
+</div>

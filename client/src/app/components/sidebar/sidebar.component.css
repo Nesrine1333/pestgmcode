@@ -1,0 +1,63 @@
+/* app.component.css */
+
+
+/* sidebar.component.css */
+.sidebar {
+  background-color: #2c3e5000 ;
+  color: #9E9E9E;
+  width: 250px;
+  transition: width 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid #888888;
+ 
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar-header {
+  padding: 20px;
+  background-color: #34495e00;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  background-color: #29b97db6;
+}
+
+.toggle-button {
+  background-color: #297fb900;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.toggle-button:hover {
+  background-color: #3498db;
+}
+
+.content-shift {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .content-shift {
+  margin-left: 50px;
+}

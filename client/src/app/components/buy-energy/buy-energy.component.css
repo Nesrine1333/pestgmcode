@@ -1,0 +1,65 @@
+.content {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin: 0;
+  padding: 0px;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.contentContainer {
+  /* flex-grow: 1; */
+  transition: margin-left 0.3s ease;
+  height: 100%;
+ margin: 50px;
+padding: 0;
+align-self: flex-start;
+background-color: rgba(240, 248, 255, 0);
+
+}
+button {
+  background-color: #007bff; /* Primary blue color */
+  border: none; /* Remove default border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for size */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline-block for layout */
+  font-size: 16px; /* Font size */
+  margin: 10px 2px; /* Margin around buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.header {
+  /* padding: 20px; */
+  background-color: rgba(240, 248, 255, 0);
+ 
+}
+
+.buy-energy, .consumer-info {
+  margin-top: 20px;
+  padding: 20px;
+
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+}
+
+.chart-container {
+  margin-top: 20px;
+  padding: 20px;
+
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+/* sidebar.component.css */
